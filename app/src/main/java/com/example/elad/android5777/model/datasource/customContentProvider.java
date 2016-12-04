@@ -22,6 +22,7 @@ public class customContentProvider extends ContentProvider {
 
     DB_Manager db = DBManagerFactory.getManager();
 
+
     @Override
     public boolean onCreate() {
         Log.d(TAG, "onCreate");
