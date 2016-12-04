@@ -72,7 +72,7 @@ public class LocalDBManager implements DB_Manager {
         }
         catch (ParseException ex)
         {
-            System.out.println(ex);
+            System.out.println("Error with date casting" + ex);
         }
     }
 
