@@ -42,6 +42,7 @@ public class LocalDBManager implements DB_Manager {
         ));
     }
 
+
     @Override
     public void addBusiness(ContentValues obj) {
         businessUpdate = true;

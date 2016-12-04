@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         tempCP.put("password", "123456");
         myProvider.onCreate();
         myProvider.insert(Uri.parse("content://com.example.elad.android5777/Users"), tempCP);
-        /// nothing
     }
 }
 
