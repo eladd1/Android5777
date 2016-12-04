@@ -1,6 +1,6 @@
 package com.example.elad.android5777.model.entities;
 
-import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Created by Elad on 22/11/2016.
@@ -10,13 +10,13 @@ public class Active {
 
     private KindOfAction kind;
     private String country;
-    private Calendar start;
-    private Calendar end;
+    private Date start;
+    private Date end;
     private double price;
     private String description;
     private int BusinessId;
 
-    public Active(KindOfAction kind, String country, Calendar start, Calendar end, double price, String description, int businessId) {
+    public Active(KindOfAction kind, String country, Date start, Date end, double price, String description, int businessId) {
         this.kind = kind;
         this.country = country;
         this.start = start;
@@ -42,19 +42,19 @@ public class Active {
         this.country = country;
     }
 
-    public Calendar getStart() {
+    public Date getStart() {
         return start;
     }
 
-    public void setStart(Calendar start) {
+    public void setStart(Date start) {
         this.start = start;
     }
 
-    public Calendar getEnd() {
+    public Date getEnd() {
         return end;
     }
 
-    public void setEnd(Calendar end) {
+    public void setEnd(Date end) {
         this.end = end;
     }
 

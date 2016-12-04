@@ -9,6 +9,9 @@ import com.example.elad.android5777.model.entities.Business;
 import com.example.elad.android5777.model.entities.KindOfAction;
 import com.example.elad.android5777.model.entities.User;
 
+import java.net.SocketPermission;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -55,15 +58,22 @@ public class LocalDBManager implements DB_Manager {
     @Override
     public void addActivity(ContentValues obj) {
         activitiesUpdate = true;
-        activities.add(new Active(
-                KindOfAction.TRAVEL_AGENCY,
-                obj.getAsString("country"),
-                obj.getAs("start"),
-                obj.getAs("end"),
-                obj.getAsDouble("price"),
-                obj.getAsString("description"),
-                obj.getAsInteger("businessId")
-        ));
+        SimpleDateFormat formatDate = new SimpleDateFormat("dd/MM/yyyy");
+        try {
+            activities.add(new Active(
+                    KindOfAction.TRAVEL_AGENCY,
+                    obj.getAsString("country"),
+                    formatDate.parse(obj.getAsString("start")),
+                    formatDate.parse(obj.getAsString("end")),
+                    obj.getAsDouble("price"),
+                    obj.getAsString("description"),
+                    obj.getAsInteger("businessId")
+            ));
+        }
+        catch (ParseException ex)
+        {
+            System.out.println(ex);
+        }
     }
 
     @Override
