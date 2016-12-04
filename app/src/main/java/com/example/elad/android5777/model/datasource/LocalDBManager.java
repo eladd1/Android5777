@@ -55,7 +55,6 @@ public class LocalDBManager implements DB_Manager {
     @Override
     public void addActivity(ContentValues obj) {
         activitiesUpdate = true;
-        /*
         activities.add(new Active(
                 KindOfAction.TRAVEL_AGENCY,
                 obj.getAsString("country"),
@@ -65,7 +64,6 @@ public class LocalDBManager implements DB_Manager {
                 obj.getAsString("description"),
                 obj.getAsInteger("businessId")
         ));
-        */
     }
 
     @Override
