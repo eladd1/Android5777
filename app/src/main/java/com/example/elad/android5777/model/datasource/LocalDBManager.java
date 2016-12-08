@@ -18,6 +18,8 @@ import java.util.Date;
 
 /**
  * Created by Elad on 26/11/2016.
+ *
+ * וחווווווווווווווווווווווווווווווווווווווווווווווווווווווווווווווווווווווו
  */
 
 public class LocalDBManager implements DB_Manager {
