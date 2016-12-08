@@ -27,6 +27,7 @@ public class LocalDBManager implements DB_Manager {
     private ArrayList<User> users = new ArrayList<>();
     private ArrayList<Business> businesses = new ArrayList<>();
     private ArrayList<Active> activities = new ArrayList<>();
+
     private boolean businessUpdate = false;
     private boolean activitiesUpdate = false;
     private boolean usersUpdate = false;

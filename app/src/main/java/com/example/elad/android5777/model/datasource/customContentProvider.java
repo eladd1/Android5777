@@ -23,7 +23,6 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.support.annotation.Nullable;
 import android.util.Log;
-
 import com.example.elad.android5777.model.backend.DB_Manager;
 import com.example.elad.android5777.model.entities.Business;
 
@@ -40,6 +39,7 @@ public class customContentProvider extends ContentProvider {
     static final String id = "id";
     static final String name = "name";
     static final int uriCode = 1;
+
     private static HashMap<String, String> values;
 
     // Creates a UriMatcher object.
