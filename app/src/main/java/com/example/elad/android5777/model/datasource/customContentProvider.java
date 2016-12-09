@@ -27,7 +27,7 @@ import com.example.elad.android5777.model.backend.DB_Manager;
 import com.example.elad.android5777.model.entities.Business;
 
 /**
- * Created by Elad on 26/11/2016.
+ * Created by Elad and Dvir on 26/11/2016.
  */
 
 public class customContentProvider extends ContentProvider {
