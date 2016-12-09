@@ -108,51 +108,51 @@ public class customContentProvider extends ContentProvider {
 
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
-        // TODO: in "LocalDBManager" and in "DB_Manger" - create delete function and update here the functions
-        Log.d(TAG, "delete");
-        int userCount = 0;
-        int activeCount = 0;
-        int businessCount = 0;
-        //String table = uri.getPath().substring(1);
-        switch (sUriMatcher.match(uri))
-        {
-            case 1:
-                //userCount = db.deleteUser(TABLE_NAME, selection, selectionArgs);
-                getContext().getContentResolver().notifyChange(uri, null);
-                return userCount;
-            case 2:
-                //activeCount = db.deleteUser(TABLE_NAME, selection, selectionArgs);
-                getContext().getContentResolver().notifyChange(uri, null);
-                return activeCount;
-            case 3:
-                //businessCount = db.deleteUser(TABLE_NAME, selection, selectionArgs);
-                getContext().getContentResolver().notifyChange(uri, null);
-                return businessCount;
-            default:
-                throw new IllegalArgumentException("Unknown URI " + uri);
-                //throw new exception("Error! number of uri must be between 1 to 3");
-        }
+          // TODO: in "LocalDBManager" and in "DB_Manger" - create delete function and update here the functions
+//        Log.d(TAG, "delete");
+//        int userCount = 0;
+//        int activeCount = 0;
+//        int businessCount = 0;
+//        //String table = uri.getPath().substring(1);
+//        switch (sUriMatcher.match(uri))
+//        {
+//            case 1:
+//                //userCount = db.deleteUser(TABLE_NAME, selection, selectionArgs);
+//                getContext().getContentResolver().notifyChange(uri, null);
+//                return userCount;
+//            case 2:
+//                //activeCount = db.deleteUser(TABLE_NAME, selection, selectionArgs);
+//                getContext().getContentResolver().notifyChange(uri, null);
+//                return activeCount;
+//            case 3:
+//                //businessCount = db.deleteUser(TABLE_NAME, selection, selectionArgs);
+//                getContext().getContentResolver().notifyChange(uri, null);
+//                return businessCount;
+//            default:
+//                throw new IllegalArgumentException("Unknown URI " + uri);
+//                //throw new exception("Error! number of uri must be between 1 to 3");
+//        }
+        return Integer.parseInt(null);
     }
 
     @Override
     public int update(Uri uri, ContentValues values, String selection, String[] selectionArgs) {
         Log.d(TAG, "update");
         // TODO: in "LocalDBManager" and in "DB_Manger" - create update function and update here the functions
-        switch (sUriMatcher.match(uri))
-        {
-            case 1:
-                //db.updateUser(values);
-                break;
-            case 2:
-                //db.updateActivity(values);
-                break;
-            case 3:
-                //db.updateBusiness(values);
-                break;
-            default:
-                throw new IllegalArgumentException("Unknown URI " + uri);
-                //throw new exception("Error! number of uri must be between 1 to 3");
-        }
-        return 0;
-    }
+//        switch (sUriMatcher.match(uri))
+//        {
+//            case 1:
+//                //db.updateUser(values);
+//                break;
+//            case 2:
+//                //db.updateActivity(values);
+//                break;
+//            case 3:
+//                //db.updateBusiness(values);
+//                break;
+//            default:
+//                throw new IllegalArgumentException("Unknown URI " + uri);
+//                //throw new exception("Error! number of uri must be between 1 to 3");
+//        }
+        return Integer.parseInt(null);    }
 }
