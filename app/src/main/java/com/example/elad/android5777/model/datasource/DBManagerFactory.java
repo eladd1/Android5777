@@ -9,7 +9,7 @@ import com.example.elad.android5777.model.backend.DB_Manager;
 public class DBManagerFactory {
     enum DBtype {Local, RemoteServer};
 
-    static DBtype type = DBtype.RemoteServer;
+    static DBtype type = DBtype.Local;
 
     private static DB_Manager manager = null;
     public static DB_Manager getManager()
@@ -24,6 +24,8 @@ public class DBManagerFactory {
                 //case RemoteServer:
                 //manager = new ServerDBManager();
                 //break;
+                default:
+                    break;
             }
         }
     return manager;
