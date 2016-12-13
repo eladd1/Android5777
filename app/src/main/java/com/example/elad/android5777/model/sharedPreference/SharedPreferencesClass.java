@@ -11,13 +11,13 @@ package com.example.elad.android5777.model.sharedPreference;
 //
 public class SharedPreferencesClass extends Activity {
 
-    SharedPreferences sharedpreferences;
+    private SharedPreferences sharedpreferences;
     public static final String mypreference = "mypref";
     public static final String Name = "nameKey";
     public static final String password = "passKey";
 
 
-    protected void add(String name, String pass) {
+    public void add(String name, String pass) {
 
         sharedpreferences = getSharedPreferences(mypreference, Context.MODE_PRIVATE);
         Editor editor = sharedpreferences.edit();
