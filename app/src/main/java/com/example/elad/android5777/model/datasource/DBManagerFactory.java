@@ -24,6 +24,8 @@ public class DBManagerFactory {
                 //case RemoteServer:
                 //manager = new ServerDBManager();
                 //break;
+                default:
+                    break;
             }
         }
     return manager;

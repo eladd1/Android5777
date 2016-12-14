@@ -36,12 +36,12 @@ public class LocalDBManager implements DB_Manager {
 
     @Override
     public void addUser(ContentValues obj) {
-        usersUpdate = true;
-        users.add(new User(
-                obj.getAsInteger("id"),
-                obj.getAsString("name"),
-                obj.getAsString("password")
-        ));
+            usersUpdate = true;
+            users.add(new User(
+                    obj.getAsInteger("id"),
+                    obj.getAsString("name"),
+                    obj.getAsString("password")
+            ));
     }
 
 
