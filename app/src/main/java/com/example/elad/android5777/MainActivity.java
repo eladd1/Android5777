@@ -38,5 +38,8 @@ public class MainActivity extends AppCompatActivity {
         //String name = sp.getName();
         //String pass = sp.getPass();
         //myProvider.insert(Uri.parse("content://com.example.elad.android5777/User"), tempCP);
+
+
+        // last change: 15/12/16 00:02
     }
 }
