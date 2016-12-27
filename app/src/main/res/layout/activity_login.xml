@@ -72,7 +72,6 @@
                 android:text="Sign in"
                 android:textStyle="bold" />
 
-        </LinearLayout
-            android:te>
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>
