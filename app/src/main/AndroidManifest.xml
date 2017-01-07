@@ -13,7 +13,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".controller.MainActivity">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -30,7 +30,7 @@
             android:multiprocess="true" />
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".controller.LoginActivity"
             android:label="@string/title_activity_login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,12 +38,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BusinessOrActivity" />
+        <activity android:name=".controller.BusinessOrActivity" />
         <activity
-            android:name=".businessList"
+            android:name=".controller.businessList"
             android:label="@string/title_activity_add_business"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".newBusiness"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".controller.newBusiness" />
+
+        <service
+            android:name=".model.service.newDataService"
+            android:exported="false" />
+        <service
+            android:name=".model.service.MyService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
